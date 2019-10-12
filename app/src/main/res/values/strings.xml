@@ -2,4 +2,6 @@
     <string name="app_name">ELCHackathon</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="enter_your_username">enter your username</string>
+    <string name="login">login</string>
 </resources>
