@@ -3,7 +3,7 @@
     package="com.app.elchackathon" >
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET"/>
-
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
 
 
     <application
@@ -13,9 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
-        android:usesCleartextTraffic="true">>
+        android:usesCleartextTraffic="true">
 
-        <activity android:name=".Donation"></activity>
+        <activity android:name=".Donation" />
         <activity android:name=".StatPage" />
         <activity android:name=".SignUp" />
         <activity android:name=".HomePage" />
@@ -30,5 +30,6 @@
             </intent-filter>
         </activity>
     </application>
+
 
 </manifest>
