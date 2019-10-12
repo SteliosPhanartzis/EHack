@@ -1,2 +1,2 @@
-# ELCHackathon2019
+# EHack
 Waste Management App
