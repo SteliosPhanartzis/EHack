@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#133151">
 
     <EditText
         android:id="@+id/editText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FEE"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="#FFE"
+        android:textColorHint="#FEE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -31,35 +34,17 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"/>
-
-    <TextView
-        android:id="@+id/Registertag"
-        android:layout_width="409dp"
-        android:layout_height="60dp"
-        android:background="#ED000000"
-        android:fontFamily="optimaroman"
-        android:text="Register"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/appBarLayout"
-        app:layout_constraintVertical_bias="0.0"
-        tools:background="#000000"
-        tools:fontFamily="sans-serif-light" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="353dp"
         android:layout_height="72dp"
-        android:background="#3BF5F3DF"
         android:fontFamily="sans-serif-condensed-light"
         android:text="Join the effort!"
         android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#aa894c"
         android:textSize="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,9 +57,12 @@
         android:id="@+id/editText"
         android:layout_width="217dp"
         android:layout_height="39dp"
+        android:backgroundTint="#FFE"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
+        android:textColor="#FEE"
+        android:textColorHint="#FEE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -85,9 +73,12 @@
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#FFE"
         android:ems="10"
         android:hint="Re-enter Password"
         android:inputType="textPassword"
+        android:textColor="#FFE"
+        android:textColorHint="#FFE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
@@ -99,12 +90,15 @@
         android:id="@+id/Register"
         android:layout_width="157dp"
         android:layout_height="49dp"
+        android:background="#aa894c"
+        android:onClick="goToAnActivity"
         android:text="Register"
+        android:textColor="#FFE"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/appBarLayout"
-        android:onClick="goToAnActivity"
         app:layout_constraintVertical_bias="0.934" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
