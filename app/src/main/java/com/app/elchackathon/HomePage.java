@@ -43,7 +43,7 @@ public class HomePage extends AppCompatActivity {
         webSetting.setUseWideViewPort(true);
         htmlWebView.loadUrl("https://www.adweek.com/brand-marketing/estee-lauders-origins-brand-asks-consumers-recycle-105597/");
         TextView pts = findViewById(R.id.points);
-        getRes();
+        getPts();
         FloatingActionButton cameraFab = (FloatingActionButton) findViewById(R.id.camera);
         cameraFab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,12 +79,11 @@ public class HomePage extends AppCompatActivity {
 
     private void dispatchTakePictureIntent() {
         Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        getRes();
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
     }
-    public void getRes(){
+    public void getPts(){
         final TextView pts = findViewById(R.id.points);
 // Instantiate the RequestQueue.
         RequestQueue queue = Volley.newRequestQueue(this);
@@ -96,9 +95,6 @@ public class HomePage extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         // Display the first 500 characters of the response string.
-//                        textView.setText("Response is: "+ response.substring(0,500));
-//                        return Integer.parseInt(response);
-//                        return "test";
                         try{
                             JSONObject jsonObject = new JSONObject(response);
                             pts.setText(jsonObject.get("points").toString());
