@@ -11,7 +11,7 @@
         android:id="@+id/textInputEditText"
         android:layout_width="326dp"
         android:layout_height="35dp"
-        android:hint="@string/enter_your_username"
+        android:hint="enter your password"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,24 +57,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="411dp"
-            android:layout_height="129dp"
-            android:background="#000000"
-            android:fontFamily="sans-serif-light"
-            android:gravity="center"
-            android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
-            tools:text="Estee Lauder Companies" />
-
-    </com.google.android.material.appbar.AppBarLayout>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/textView9"

@@ -10,4 +10,6 @@
     <string name="recycle_beauty">Recycle Beauty</string>
     <string name="don_t_have_an_account_sign_up_here">Don\'t have an account? Sign up here.</string>
     <string name="points">points</string>
+    <string name="enter_your_password" />
+    <string name="articles">Articles</string>
 </resources>

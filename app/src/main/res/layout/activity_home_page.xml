@@ -7,26 +7,104 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
-        android:layout_width="421dp"
-        android:layout_height="71dp"
+        android:layout_width="429dp"
+        android:layout_height="91dp"
         android:background="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
-        <SearchView
-            android:layout_width="288dp"
-            android:layout_height="36dp"
-            android:background="#030000"
-            android:backgroundTint="#FFFFFF"
-            android:goIcon="@android:drawable/ic_search_category_default"
-            android:queryHint="Search"
-            android:textAlignment="textEnd" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="112dp">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="STATS"
+                android:textAlignment="center"
+                android:textColor="#F8FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.145"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.307" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="DONATE"
+                android:textAlignment="center"
+                android:textColor="#F8FFFFFF"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.838"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.307" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -49,21 +127,159 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-light"
-        android:text="Points"
+        android:text="points"
         android:textColor="#000000"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.221"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appbar"
-        app:layout_constraintVertical_bias="0.138" />
+        app:layout_constraintVertical_bias="0.036" />
 
-    <SeekBar
-        android:id="@+id/seekBar"
-        android:layout_width="363dp"
-        android:layout_height="40dp"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="231dp" />
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="150"
+        android:textSize="30sp"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/points2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Featured articles"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="357dp"
+        android:layout_height="33dp"
+        android:indeterminate="false"
+        android:max="200"
+        android:progress="150"
+        android:progressTint="#C29000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.281" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:drawableBottom="@android:drawable/radiobutton_off_background"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:drawableBottom="@android:drawable/radiobutton_off_background"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="68dp"
+        android:layout_height="53dp"
+        android:drawableBottom="@android:drawable/radiobutton_off_background"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="403dp"
+        android:layout_height="127dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appbar" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="402dp"
+        android:layout_height="136dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751" />
+
+    <TextView
+        android:id="@+id/points3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take this quiz, get rewarded."
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.649" />
+
+    <TextView
+        android:id="@+id/points4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take this quiz, get rewarded."
+        android:textSize="14sp"
+        app:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

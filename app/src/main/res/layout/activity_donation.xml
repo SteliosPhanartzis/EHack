@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Donation">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="349dp"
+        android:layout_height="128dp"
+        android:text="Donate to Heroes for Hire this month!"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="145dp"
+        android:layout_height="62dp"
+        android:text="Donate"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.776" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="358dp"
+        android:layout_height="89dp"
+        android:background="#00BCD4"
+        android:backgroundTint="#ffe"
+        android:backgroundTintMode="src_in"
+        android:foregroundTint="#425AAC"
+        android:indeterminateTint="#673AB7"
+        android:progressBackgroundTint="#304FFE"
+        android:progressTint="#1A237E"
+        android:scrollbarSize="4dp"
+        android:secondaryProgressTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$4960.96 donated this month!"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.354" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -31,22 +31,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
-
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#000000"
-            android:fontFamily="optimaRoman"
-            android:gravity="center"
-            android:minHeight="?actionBarSize"
-            android:padding="@dimen/appbar_padding"
-            android:text="@string/app_name"
-            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
-            android:textColor="#FFFFFF" />
-
-    </com.google.android.material.appbar.AppBarLayout>
+        app:layout_constraintVertical_bias="0.0"/>
 
     <TextView
         android:id="@+id/Registertag"
@@ -60,10 +45,10 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/appBarLayout"
-        app:layout_constraintVertical_bias="0.099"
+        app:layout_constraintVertical_bias="0.0"
         tools:background="#000000"
         tools:fontFamily="sans-serif-light" />
 
