@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.335" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/login"
         android:layout_width="266dp"
         android:layout_height="46dp"
         android:fontFamily="sans-serif-condensed-light"
@@ -45,6 +45,7 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        android:onClick="goToAnActivity"
         app:layout_constraintVertical_bias="0.638" />
 
     <com.google.android.material.appbar.AppBarLayout
@@ -93,7 +94,7 @@
         tools:text="Recycle Beauty. Earn Rewards." />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/SignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/don_t_have_an_account_sign_up_here"
@@ -101,6 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        android:onClick="goToAnActivity2"
         app:layout_constraintVertical_bias="0.729" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
