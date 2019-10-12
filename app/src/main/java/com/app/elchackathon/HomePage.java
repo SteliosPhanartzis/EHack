@@ -57,6 +57,10 @@ public class HomePage extends AppCompatActivity {
         Intent intent = new Intent(this, Donation.class);
         startActivity(intent);
     }
+    public void goToAnActivity3(View view){
+        Intent intent = new Intent(this, MapPage.class);
+        startActivity(intent);
+    }
 
     static final int REQUEST_IMAGE_CAPTURE = 1;
 

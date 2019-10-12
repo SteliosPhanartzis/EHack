@@ -12,4 +12,14 @@
     <string name="points">points</string>
     <string name="enter_your_password" />
     <string name="articles">Articles</string>
+    <string name="_0">0</string>
+    <string name="_150">150</string>
+    <string name="featured_articles">Featured articles</string>
+    <string name="_100">100</string>
+    <string name="products">Products</string>
+    <string name="did_you_know_that_about_80_percent_of_what_americans_throw_away_is_recyclable_yet_our_recycling_rate_is_only_28_percent">Did you know that about 80 percent of what Americans throw away is recyclable, yet our recycling rate is only 28 percent.</string>
+    <string name="_200">200</string>
+    <string name="todo">TODO</string>
+    <string name="stores">STORES</string>
+    <string name="stats">STATS</string>
 </resources>

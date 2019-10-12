@@ -5,5 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MapPage">
-
+    <com.google.android.gms.maps.MapView
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        map:uiCompass="true"
+        map:zOrderOnTop="true"
+        map:uiZoomControls="true"
+        android:background="#00000000"
+        android:focusable="true" />
 </androidx.constraintlayout.widget.ConstraintLayout>
