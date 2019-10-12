@@ -4,10 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-<<<<<<< HEAD
-=======
 import android.provider.MediaStore;
->>>>>>> 5c034a2ca3684513950faa0ebd42fc31d4f21f33
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
@@ -52,7 +49,6 @@ public class HomePage extends AppCompatActivity {
             return true;
         }
     }
-<<<<<<< HEAD
 
     public void goToAnActivity(View view) {
         Intent intent = new Intent(this, StatPage.class);
@@ -63,7 +59,6 @@ public class HomePage extends AppCompatActivity {
         startActivity(intent);
     }
 
-=======
     static final int REQUEST_IMAGE_CAPTURE = 1;
 
     private void dispatchTakePictureIntent() {
@@ -72,5 +67,4 @@ public class HomePage extends AppCompatActivity {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
     }
->>>>>>> 5c034a2ca3684513950faa0ebd42fc31d4f21f33
 }
