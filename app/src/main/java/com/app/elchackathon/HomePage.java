@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DownloadManager;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
@@ -13,15 +15,26 @@ import android.webkit.WebViewClient;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+
+import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
 
 
 public class HomePage extends AppCompatActivity {
@@ -82,6 +95,7 @@ public class HomePage extends AppCompatActivity {
         if (takePictureIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE);
         }
+        sendPic();
     }
     public void getPts(){
         final TextView pts = findViewById(R.id.points);
@@ -111,5 +125,66 @@ public class HomePage extends AppCompatActivity {
 
 // Add the request to the RequestQueue.
         queue.add(stringRequest);
+    }
+    public void sendPic(){
+// Instantiate the RequestQueue.
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String URL ="https://refillestee.herokuapp.com/rewards?data=testuser@gmail.com";
+//        File file = new File("");
+//        String imgurl = new String("https://raw.githubusercontent.com/SteliosPhanartzis/EHACK-Backend/master/pictures/barcodePic.jpg?token=AEMYO5ZZWO73VZCE7PUNKES5VNHWG");
+//        Bitmap bm = BitmapFactory.decodeFile(imgurl);
+//        ByteArrayOutputStream bao = new ByteArrayOutputStream();
+//        bm.compress(Bitmap.CompressFormat.JPEG, 90, bao);
+//        System.out.println(bao.toByteArray());
+//        byte[] ba = bao.toByteArray();
+//        try {
+//            file = new File(imgurl.toURI());
+//        }catch(Exception exc){}
+//        final JSONObject jsonBody = new JSONObject();
+//        try {
+////            jsonBody.put("barcode", File = new File(new URL("http://google.com/logo.jpg")));
+//            JsonObjectRequest jsonOblect = new JsonObjectRequest(Request.Method.POST, URL, new Response.Listener<JSONObject>() {
+//                @Override
+//                public void onResponse(JSONObject response) {
+////                    System.out.println(jsonBody.toString());
+//                    Toast.makeText(getApplicationContext(), "Response:  " + response.toString(), Toast.LENGTH_SHORT).show();
+//                }
+//            }, new Response.ErrorListener() {
+//                @Override
+//                public void onErrorResponse(VolleyError error) {
+//
+//                    onBackPressed();
+//
+//                }
+//            });
+//            queue.add(jsonOblect);
+
+//        }
+//        catch(JSONException ex){}
+        StringRequest stringRequest = new StringRequest(com.android.volley.Request.Method.POST, URL,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        // Display the first 500 characters of the response string.
+                        try{
+                            JSONObject jsonObject = new JSONObject(response);
+                            Toast.makeText(getApplicationContext(), "Response:  " + response.toString(), Toast.LENGTH_SHORT).show();
+                        }
+                        catch(JSONException e) {
+                        }
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+//                return "failed";
+            }
+        });
+
+// Add the request to the RequestQueue.
+        queue.add(stringRequest);
+
+
+// Add the request to the RequestQueue.
+        getPts();
     }
 }
