@@ -2,5 +2,11 @@
 <resources>
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
+<<<<<<< HEAD
     <color name="colorAccent">#FFFFFF</color>
+=======
+    <color name="colorAccent">#D81B60</color>
+    <color name="blueELC">#133151</color>
+    <color name="goldELC">#aa894c</color>
+>>>>>>> 5c034a2ca3684513950faa0ebd42fc31d4f21f33
 </resources>

@@ -5,27 +5,34 @@
     android:id="@+id/coordinatorLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#133151"
     tools:context=".MainActivity">
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText"
         android:layout_width="326dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FFE"
         android:hint="enter your password"
+        android:textColor="#FFE"
+        android:textColorHint="#FFE"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.472" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/textInputEditText2"
         android:layout_width="326dp"
-        android:layout_height="35dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FFE"
         android:hint="@string/enter_your_username"
         android:lineSpacingExtra="18sp"
+        android:textColor="#FFE"
+        android:textColorHint="#FFE"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,14 +45,17 @@
         android:id="@+id/login"
         android:layout_width="266dp"
         android:layout_height="46dp"
+        android:background="#aa894c"
         android:fontFamily="sans-serif-condensed-light"
+        android:onClick="goToAnActivity"
         android:text="@string/login"
+        android:textColor="#FFE"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-        android:onClick="goToAnActivity"
         app:layout_constraintVertical_bias="0.638" />
 
     <com.google.android.material.appbar.AppBarLayout
@@ -57,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView9"
@@ -66,26 +76,28 @@
         android:layout_marginBottom="380dp"
         android:fontFamily="sans-serif-condensed-light"
         android:text="@string/recycle_beauty"
-        android:textColor="#000000"
-        android:textSize="30sp"
+        android:textColor="#aa894c"
+        android:textSize="32sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-        app:layout_constraintVertical_bias="0.642"
+        app:layout_constraintVertical_bias="0.529"
         tools:text="Recycle Beauty. Earn Rewards." />
 
     <TextView
         android:id="@+id/SignUp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="goToAnActivity2"
         android:text="@string/don_t_have_an_account_sign_up_here"
+        android:textColor="#FFE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
-        android:onClick="goToAnActivity2"
         app:layout_constraintVertical_bias="0.729" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
