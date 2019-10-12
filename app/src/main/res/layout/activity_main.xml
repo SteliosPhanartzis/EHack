@@ -45,7 +45,7 @@
         android:id="@+id/login"
         android:layout_width="266dp"
         android:layout_height="46dp"
-        android:background="#aa894c"
+        android:background="#aa984c"
         android:fontFamily="sans-serif-condensed-light"
         android:onClick="goToAnActivity"
         android:text="@string/login"

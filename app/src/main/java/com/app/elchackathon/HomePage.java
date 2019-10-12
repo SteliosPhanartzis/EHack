@@ -49,7 +49,6 @@ public class HomePage extends AppCompatActivity {
             return true;
         }
     }
-
     public void goToAnActivity(View view) {
         Intent intent = new Intent(this, StatPage.class);
         startActivity(intent);
