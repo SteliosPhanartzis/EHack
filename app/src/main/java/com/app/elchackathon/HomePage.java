@@ -2,7 +2,9 @@ package com.app.elchackathon;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -39,4 +41,14 @@ public class HomePage extends AppCompatActivity {
             return true;
         }
     }
+
+    public void goToAnActivity(View view) {
+        Intent intent = new Intent(this, StatPage.class);
+        startActivity(intent);
+    }
+    public void goToAnActivity2(View view){
+        Intent intent = new Intent(this, Donation.class);
+        startActivity(intent);
+    }
+
 }
