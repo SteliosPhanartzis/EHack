@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.content.Intent;
+
 
 import com.app.elchackathon.ui.main.SectionsPagerAdapter;
 
@@ -19,10 +21,20 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        //TabLayout tabs = findViewById(R.id.tabs);
+
 
     }
+    public void goToAnActivity(View view) {
+        Intent intent = new Intent(this, HomePage.class);
+        startActivity(intent);
+    }
+    public void goToAnActivity2(View view){
+        Intent intent = new Intent(this, SignUp.class);
+        startActivity(intent);
+    }
+
 }
